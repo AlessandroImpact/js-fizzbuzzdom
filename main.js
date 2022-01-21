@@ -12,6 +12,10 @@ for(let i=0; i<=1000;i++) {
 
         containerElement.innerHTML += "<div class='box yellow'>" + i +" </div>";
 
-    }else if (i%3 == 0 && i%5 !=0)
+    }else if (i%3 == 0 && i%5 !=0) {
     containerElement.innerHTML += "<div class='box green'>" + i +" </div>";
+
+    }else {
+        containerElement.innerHTML += "<div class='box '>" + i +" </div>";
+    }
 }

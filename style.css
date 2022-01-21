@@ -38,3 +38,15 @@ h1 {
     justify-content: center;
     background-color: #118ab2;
 }
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}

@@ -1,4 +1,8 @@
-*{
+ 
+ /*REGOLE GENERALI*/
+ 
+ 
+ *{
     margin: 0;
     padding:0;
     box-sizing: border-box;
@@ -7,6 +11,8 @@
 html {
     background-color: #073b4c;
 }
+
+ /*REGOLE SPECIFICHE*/
 
 h1 {
     text-align: center;

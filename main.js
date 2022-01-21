@@ -2,20 +2,30 @@
 
 let containerElement = document.getElementById('container');
 
-for(let i=0; i<=1000;i++) {
+let fizChoice ="" ;
+
+for(let i=1; i<=1000;i++) {
 
     if(i%3 == 0 && i%5==0){  /*multiplo di 3 e 5 insieme */
 
-        containerElement.innerHTML += "<div class='box red'>" + i +" </div>";
+        fizChoice = "fizzbuz";
 
-    }else if(i%5 == 0 && i%3 != 0) {
+        containerElement.innerHTML += "<div class='box red'>" + fizChoice +" </div>";
 
-        containerElement.innerHTML += "<div class='box yellow'>" + i +" </div>";
+    }else if(i%5 == 0 && i%3 != 0) { /*multiplo di 5 */
 
-    }else if (i%3 == 0 && i%5 !=0) {
-    containerElement.innerHTML += "<div class='box green'>" + i +" </div>";
+        fizChoice = "buzz";
 
-    }else {
+        containerElement.innerHTML += "<div class='box yellow'>" + fizChoice +" </div>";
+
+    }else if (i%3 == 0 && i%5 !=0) {   /*multiplo di 3 */
+
+        fizChoice = "fizz";
+
+    containerElement.innerHTML += "<div class='box green'>" + fizChoice +" </div>";
+
+    }else {   /*numeri normali */
+
         containerElement.innerHTML += "<div class='box '>" + i +" </div>";
     }
 }
